@@ -1,0 +1,28 @@
+{
+  "name": "electron-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development electron .",
+    "build": "cross-env NODE_ENV=production nuxt-ts build && electron-builder"
+  },
+  "dependencies": {
+    "@nuxt/typescript-runtime": "^1.0.0",
+    "nuxt": "^2.14.0"
+  },
+  "devDependencies": {
+    "@nuxt/types": "^2.14.0",
+    "@nuxt/typescript-build": "^2.0.2",
+    "cross-env": "^7.0.2",
+    "electron": "^10.0.0",
+    "electron-builder": "^22.8.0",
+    "electron-devtools-installer": "^3.1.1"
+  },
+  "main": "entry-point.js",
+  "build": {
+    "appId": "electron-nuxts",
+    "directories": {
+      "output": "build"
+    }
+  }
+}
